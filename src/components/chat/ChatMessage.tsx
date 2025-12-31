@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import type { Message } from "@/types/chat";
 import { useState, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import bcrecEmblem from '../../assets/bcrec-emblem.png';
 
 interface ChatMessageProps {
     message: Message;
@@ -43,7 +44,7 @@ export const ChatMessage = memo(function ChatMessage({ message }: ChatMessagePro
                     <User className="h-5 w-5" />
                 ) : (
                     <img
-                        src="../assets/bcrec-emblem.png"
+                        src={bcrecEmblem}
                         alt="Assistant"
                         className="w-full h-full object-cover rounded-full"
                     />

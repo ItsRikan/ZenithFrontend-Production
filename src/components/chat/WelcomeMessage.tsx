@@ -1,5 +1,6 @@
 import { GraduationCap, BookOpen, Clock, Shield } from 'lucide-react';
 import { motion, type Variants } from 'framer-motion';
+import bcrecEmblem from '../../assets/bcrec-emblem.png';
 
 export function WelcomeMessage() {
     const features = [
@@ -38,7 +39,7 @@ export function WelcomeMessage() {
             >
                 <div className="absolute inset-0 bg-accent/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-700 animate-pulse-soft" />
                 <img
-                    src="../assets/bcrec-emblem.png"
+                    src={bcrecEmblem}
                     alt="BCREC Emblem"
                     className="w-full h-full object-contain relative z-10 transition-transform duration-500 group-hover:scale-110"
                 />

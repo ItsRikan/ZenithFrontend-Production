@@ -1,4 +1,5 @@
 import { motion, type Variants } from 'framer-motion';
+import bcrecEmblem from '../../assets/bcrec-emblem.png';
 
 export function TypingIndicator() {
     const dotVariants: Variants = {
@@ -21,7 +22,7 @@ export function TypingIndicator() {
         >
             <div className="flex-shrink-0 w-9 h-9 rounded-full bg-card border border-accent/20 flex items-center justify-center shadow-sm relative overflow-hidden">
                 <img
-                    src="../assets/bcrec-emblem.png"
+                    src={bcrecEmblem}
                     alt="Assistant"
                     className="w-full h-full object-cover p-1 animate-pulse-soft opacity-50"
                 />

@@ -13,6 +13,7 @@ import { ExternalLink, MessageSquare, ChevronRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { Footer } from '@/components/Footer';
+import bcrecEmblem from '../assets/bcrec-emblem.png';
 
 type InquiryStep = 'idle' | 'mail_preview' | 'mail_sending' | 'mail_sent';
 
@@ -23,8 +24,6 @@ export default function Index() {
     const [mailData, setMailData] = useState({ draft: '', message: '', department: '' });
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_sessionId, setSessionId] = useState<string>('');
-
-
 
     useEffect(() => {
         setSessionId(getSessionId());
@@ -66,8 +65,6 @@ export default function Index() {
         }, delay);
     };
 
-
-
     const handleConfirmMail = async () => {
         setInquiryStep('mail_sending');
         try {
@@ -96,8 +93,6 @@ export default function Index() {
         addBotMessage("You canceled the mail.");
     };
 
-
-
     return (
         <div className="min-h-screen bg-gradient-soft bg-static-blobs font-sans flex flex-col selection:bg-accent/30 overflow-x-hidden relative">
 
@@ -110,7 +105,7 @@ export default function Index() {
                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                             className="w-10 h-10 rounded-full bg-gradient-hero p-0.5 shadow-md ring-2 ring-white/50"
                         >
-                            <img src="../assets/bcrec-emblem.png" alt="Logo" className="w-full h-full object-cover rounded-full bg-white shadow-inner" />
+                            <img src={bcrecEmblem} alt="Logo" className="w-full h-full object-cover rounded-full bg-white shadow-inner" />
                         </motion.div>
                         <div className="flex flex-col">
                             <h1 className="font-serif text-lg font-bold text-primary leading-none group-hover:text-accent transition-all duration-300">BCREC</h1>

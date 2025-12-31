@@ -1,4 +1,4 @@
-
+import bcrecEmblem from '../../assets/bcrec-emblem.png';
 
 interface ChatHeaderProps {
     onlineCount?: number;
@@ -14,7 +14,7 @@ export function ChatHeader({ onlineCount: _onlineCount = 124 }: ChatHeaderProps)
                 <div className="relative">
                     <div className="w-14 h-14 rounded-full border-2 border-accent/50 p-0.5 bg-white/10 backdrop-blur-sm overflow-hidden shadow-lg">
                         <img
-                            src="../assets/bcrec-emblem.png"
+                            src={bcrecEmblem}
                             alt="BCREC Emblem"
                             className="w-full h-full object-cover"
                         />
