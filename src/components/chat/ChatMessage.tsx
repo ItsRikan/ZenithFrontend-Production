@@ -43,7 +43,7 @@ export const ChatMessage = memo(function ChatMessage({ message }: ChatMessagePro
                     <User className="h-5 w-5" />
                 ) : (
                     <img
-                        src="/src/assets/bcrec-emblem.png"
+                        src="../assets/bcrec-emblem.png"
                         alt="Assistant"
                         className="w-full h-full object-cover rounded-full"
                     />

@@ -110,7 +110,7 @@ export default function Index() {
                             transition={{ type: "spring", stiffness: 400, damping: 10 }}
                             className="w-10 h-10 rounded-full bg-gradient-hero p-0.5 shadow-md ring-2 ring-white/50"
                         >
-                            <img src="/src/assets/bcrec-emblem.png" alt="Logo" className="w-full h-full object-cover rounded-full bg-white shadow-inner" />
+                            <img src="../assets/bcrec-emblem.png" alt="Logo" className="w-full h-full object-cover rounded-full bg-white shadow-inner" />
                         </motion.div>
                         <div className="flex flex-col">
                             <h1 className="font-serif text-lg font-bold text-primary leading-none group-hover:text-accent transition-all duration-300">BCREC</h1>

@@ -12,7 +12,7 @@ export function Footer() {
                     <div className="flex flex-col gap-6">
                         <div className="flex items-center gap-3">
                             <div className="w-10 h-10 rounded-full bg-gradient-hero p-0.5 shadow-md">
-                                <img src="/src/assets/bcrec-emblem.png" alt="Logo" className="w-full h-full object-cover rounded-full bg-white shadow-inner" />
+                                <img src="../assets/bcrec-emblem.png" alt="Logo" className="w-full h-full object-cover rounded-full bg-white shadow-inner" />
                             </div>
                             <div className="flex flex-col">
                                 <span className="font-serif text-lg font-bold text-primary leading-none">BCREC</span>

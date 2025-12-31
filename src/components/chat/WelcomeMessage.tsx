@@ -38,7 +38,7 @@ export function WelcomeMessage() {
             >
                 <div className="absolute inset-0 bg-accent/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-700 animate-pulse-soft" />
                 <img
-                    src="/src/assets/bcrec-emblem.png"
+                    src="../assets/bcrec-emblem.png"
                     alt="BCREC Emblem"
                     className="w-full h-full object-contain relative z-10 transition-transform duration-500 group-hover:scale-110"
                 />
